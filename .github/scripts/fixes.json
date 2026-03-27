@@ -1,0 +1,21 @@
+{
+  "description": "Repository-specific fixes for ory/docusaurus-template",
+  "fixes": {
+    "contrib/sidebar.js": [
+      {
+        "type": "replace",
+        "find": "const docs = [...resolveRefs({ $slug: 'docs' }), ...result]",
+        "replace": "const docs = [...result]",
+        "comment": "Remove remote fetch of ory/docs sidebar — that URL returns 404 and crashes write-translations"
+      }
+    ],
+    "contrib/sidebar.json": [
+      {
+        "type": "replace",
+        "find": "[\n  {\n    \"Open Source Ory Kratos\": {\n      \"$slug\": \"kratos\"\n    }\n  },\n  {\n    \"Open Source Ory Keto\": {\n      \"$slug\": \"keto\"\n    }\n  },\n  {\n    \"Open Source Ory Hydra\": {\n      \"$slug\": \"hydra\"\n    }\n  },\n  {\n    \"Open Source Ory Oathkeeper\": {\n      \"$slug\": \"oathkeeper\"\n    }\n  }\n]",
+        "replace": "[]",
+        "comment": "Remove remote $slug references that fetch from GitHub repos — those URLs may return 404"
+      }
+    ]
+  }
+}
