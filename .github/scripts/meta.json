@@ -6,5 +6,6 @@
   "translateCommand": "npx docusaurus write-translations",
   "buildCommand": "npm run build",
   "buildOutput": "build",
-  "packageManager": "npm"
+  "packageManager": "npm",
+  "nodeVersion": "18"
 }
