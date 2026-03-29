@@ -60,3 +60,4 @@ fi
 npm install --legacy-peer-deps
 
 echo "[DONE] Repository is ready for docusaurus commands."
+echo 'export NODE_OPTIONS="--openssl-legacy-provider"' > .build-env
