@@ -1,0 +1,18 @@
+{
+  "item.label.Home": {
+    "message": "Home",
+    "description": "Navbar item with label Home"
+  },
+  "item.label.Discussions": {
+    "message": "Discussions",
+    "description": "Navbar item with label Discussions"
+  },
+  "item.label.Slack": {
+    "message": "Slack",
+    "description": "Navbar item with label Slack"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}
