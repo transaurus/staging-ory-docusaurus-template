@@ -87,6 +87,10 @@ const prismThemeLight = {
 }
 
 module.exports = {
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en", "zh-Hans"],
+  },
   title: config.projectName,
   tagline: config.projectTagLine,
   url: `https://www.ory.sh/`,
